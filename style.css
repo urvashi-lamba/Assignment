@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+body{
+    width: 100%;
+}
+
+
+ /* **********navbar**********   */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.logo{
+    text-decoration: none;
+    color: #00303D;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 5px;
+    line-height: 25px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 15px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#SearchSign a{
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #00303D;
+    color: beige;
+    align-items: center;
+}   
+
+#SearchSign a:hover{
+    color: #088178;
+    background-color: #E3E6F3;
+}
+
+
+
+ /* **********link**********   */
+#header_container{
+    height: 40px;
+    background-color: #E3E6F3;
+    text-align: center;
+}
+#header_container a{
+    display: block;
+    text-decoration: none;
+    color: #1a1a1a;
+    padding: 15px;
+    word-spacing: 2px;
+    font-size: 14px;
+    
+}
+
+
+
+/* **********hero**********   */
+#hero{
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/mando-blu-ray-hero-desktop_aa411adb.jpeg?region=0,0,2048,878&amp;width=320");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h2{
+    width: 40%;
+    color: white;
+    padding: 20px;
+    line-height: 40px;
+    font-size: 35px;
+}
+#hero p{
+    color: white;
+    padding: 0px 20px;
+}
+#hero a{
+    background-color: yellow;
+    color: black;
+    border-radius: 30px;
+    padding: 10px ;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+
+
+/* **********banner**********   */
+#banner{
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/ahsoka-tentpole-desktop_87875115.jpeg?region=0,0,1600,600&amp;width=1200");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#banner img{
+    height: 150px;
+    width: 400px;
+    margin: 50px 70px 0px 10px;
+}
+#banner p{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    color: white;
+    width: 40%;
+    margin-top: 30px;
+}
+#banner a{
+    background-color: yellow;
+    color: black;
+    border-radius: 30px;
+    padding: 10px ;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+#banner #button{
+    margin-top: 30px;
+    margin-right: 123px;
+}
+
+
+
+/* **********movies**********   */
+.movies{
+    background-color: #AAAAAA;
+}
+.more-cards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+
+
+/* **********latest**********   */
+.latest {
+    padding: 40px 60px ;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.cards{
+    width: 30%;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 10px;
+    transition: 0.2s ease;
+    position: relative;
+}
+.cards:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+.cards img{
+    width: 100%;
+    border-radius: 20px;
+}
+.cards .des{
+    text-align: start;
+    padding-top: 10px;
+}
+.cards .des a{
+    color: #1a1a1a;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#news-features{
+    margin-top: 40px;
+}
+#video{
+    margin-top: 40px;
+}
+#explore{
+    margin-top: 40px;
+}
+
+
+
+/* **********Footer********** */
+
+footer{
+        background-color: #E3E6F3;
+        color: #1a1a1a;
+        padding: 80px 40px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 600;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer li{
+    display: inline;
+    padding: 8px;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 30px;
+}
+footer i:hover,
+footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+.icons{
+    margin: 20px;
+}
+.copyright{
+    margin-top: 50px;
+}
+.policies{
+    margin-top: 20px;
+    line-height: 15px;
+}
+.policies li{
+    text-decoration: underline;
+}
+
+
+
